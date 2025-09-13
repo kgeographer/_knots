@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Endless Knots (Test)</title>
+    <link>https://endlessknots.test/</link>
+    <description>Test import to Substack</description>
+    <language>en-us</language>
+    <pubDate>Sat, 13 Sep 2025 12:00:00 +0000</pubDate>
+    <lastBuildDate>Sat, 13 Sep 2025 12:00:00 +0000</lastBuildDate>
+
+    <item>
+      <title>Test Post 3</title>
+      <link>https://endlessknots.test/post3</link>
+      <guid isPermaLink="false">post-3-guid</guid>
+      <pubDate>Fri, 12 Sep 2025 09:30:00 +0000</pubDate>
+      <author>Jessica Lipnack</author>
+      <category>Writing</category>
+      <description><![CDATA[
+        <p>This is a <strong>test</strong> post body with an image.</p>
+        <p><img src="https://web.archive.org/web/20250911223709id_/https://endlessknots.netage.com/.a/6a00df3523b1d0883401b8d13a538a970c-popup" alt="where's my BIG image?"/></p>
+      ]]></description>
+    </item>
+
+  </channel>
+</rss>
