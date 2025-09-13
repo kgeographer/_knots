@@ -2,6 +2,14 @@
 """
 04_fetch_and_dedupe_images.py
 
+python scripts/04_fetch_and_dedupe_images.py \
+  --occ work/image_manifest.csv \
+  --uniq work/image_urls_unique.csv \
+  --out-map work/url_map.csv \
+  --img-dir dump/images \
+  --host-base-url "https://raw.githubusercontent.com/kgeographer/_knots/main/dump/images" \
+  --workers 6
+
 Download and de-duplicate images referenced by the image manifests:
 
 Inputs:
