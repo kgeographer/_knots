@@ -1,0 +1,29 @@
+1.	01_parse_dump.py
+In: dump/endlessknots.txt
+Out: work/posts_raw.jsonl
+Does: identify post boundaries; extract fields (title/date/tags/body/permalink).
+	2.	02_normalize_posts.py
+In: work/posts_raw.jsonl
+Out: work/posts_norm.jsonl (temporarily same as raw, but with cleaned dates, slugs, tags list).
+	3.	03_build_image_manifest.py
+In: work/posts_norm.jsonl
+Out: work/image_manifest.csv (unique URLs + per-post refs).
+	4.	04_fetch_and_dedupe_images.py
+In: work/image_manifest.csv
+Out: files in media/originals/ and media/dedup/, plus work/url_map.csv.
+	5.	05_publish_images.py (choose VM or GitHub Pages)
+In: media/dedup/, config/host_base_url.txt
+Out: images available at public URLs (no file output required, but you can re-emit work/url_map.csv now with the final new_url column).
+	6.	06_rewrite_html.py
+In: work/posts_norm.jsonl, work/url_map.csv, config/rewrite_rules.yaml
+Out: updated work/posts_norm.jsonl (now with rewritten <img src> and any other cleanups).
+	7.	07_emit_substack_csv.py
+In: work/posts_norm.jsonl
+Out: out/posts_substack.csv (or chunked: out/posts_substack_001.csv, etc.)
+	8.	(optional) 07b_emit_rss.py
+In: work/posts_norm.jsonl
+Out: out/feeds/feed-*.xml
+	9.	08_qc_report.py
+In: everything above
+Out: out/reports/qa.md with counts, missing images, bad links, etc.
+

@@ -1,0 +1,547 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="AngularAmbiguousComponentTag" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="AngularCliAddDependency" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="AngularInaccessibleComponentMemberInAotMode" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="AngularIncorrectTemplateDefinition" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="AngularInsecureBindingToEvent" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="AngularInvalidAnimationTriggerAssignment" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="AngularInvalidEntryComponent" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="AngularInvalidI18nAttribute" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="AngularInvalidImportedOrDeclaredSymbol" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="AngularInvalidSelector" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="AngularInvalidTemplateReferenceVariable" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="AngularMissingEventHandler" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="AngularMissingOrInvalidDeclarationInModule" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="AngularMultipleStructuralDirectives" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="AngularNonEmptyNgContent" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="AngularRecursiveModuleImportExport" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="AngularUndefinedBinding" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="AngularUndefinedModuleExport" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="AngularUndefinedTag" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="AppEngineThreadsafeCGIHandlerInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="AppEngineThreadsafeInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="CheckDtdRefs" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="CheckTagEmptyBody" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="CheckXmlFileWithXercesValidator" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="CoffeeScriptFunctionSignatures" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="CoffeeScriptInfiniteLoop" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="CoffeeScriptLiteralNotFunction" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="CoffeeScriptModulesDependencies" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="CoffeeScriptSillyAssignment" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="CoffeeScriptSwitchStatementWithNoDefaultBranch" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="CoffeeScriptUnusedLocalSymbols" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="CommandLineInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="CucumberExamplesColon" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="CucumberMissedExamples" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="CucumberTableInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="CucumberUndefinedStep" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="CythonUsageBeforeDeclarationInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="GherkinBrokenTableInspection" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="GherkinMisplacedBackground" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="GherkinScenarioToScenarioOutline" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="GrazieInspection" enabled="false" level="GRAMMAR_ERROR" enabled_by_default="false" />
+    <inspection_tool class="HamlNestedTagContent" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="HttpRequestContentLengthIsIgnored" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="HttpRequestPlaceholder" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="IgnoreFileDuplicateEntry" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="IncorrectHttpHeaderInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="JupyterPackageInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="LanguageDetectionInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="LessResolvedByNameOnly" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="LessUnresolvedMixin" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="LessUnresolvedVariable" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="MongoJSDeprecationInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="MongoJSExtDeprecationInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="MongoJSExtResolveInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="MongoJSExtSideEffectsInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="MongoJSResolveInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="MongoJSSideEffectsInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="MsBuiltinInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="MsOrderByInspection" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="MysqlLoadDataPathInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="MysqlParsingInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="OraMissingBodyInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="OraOverloadInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="OraUnmatchedForwardDeclarationInspection" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="PoetryPackageVersionsInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="Puppet3Deprecations" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="Puppet4Deprecations" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PuppetMultipleHashSetParamsPerResourceInstance" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="PuppetUnresolved" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyAbstractClassInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyArgumentEqualDefaultInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyArgumentListInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyAssignmentToLoopOrWithParameterInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyAsyncCallInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyAttributeOutsideInitInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyAugmentAssignmentInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyBDDParametersInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyBehaveInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyBroadExceptionInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyByteLiteralInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyCallingNonCallableInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyChainedComparisonsInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyClassHasNoInitInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyClassicStyleClassInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyComparisonWithNoneInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyCompatibilityInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true">
+        <option name="ourVersions">
+          <value>
+            <list size="1">
+              <item index="0" class="java.lang.String" itemvalue="3.11" />
+            </list>
+          </value>
+        </option>
+      </scope>
+      <option name="ourVersions">
+        <value>
+          <list size="4">
+            <item index="0" class="java.lang.String" itemvalue="2.7" />
+            <item index="1" class="java.lang.String" itemvalue="3.11" />
+            <item index="2" class="java.lang.String" itemvalue="3.12" />
+            <item index="3" class="java.lang.String" itemvalue="3.13" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyDataclassInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyDecoratorInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyDefaultArgumentInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyDeprecationInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyDictCreationInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyDictDuplicateKeysInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyDocstringTypesInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyDunderSlotsInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyExceptClausesOrderInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyExceptionInheritInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyFinalInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyFromFutureImportInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyGlobalUndefinedInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyInconsistentIndentationInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyIncorrectDocstringInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyInitNewSignatureInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyInterpreterInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyListCreationInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyMandatoryEncodingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyMethodFirstArgAssignmentInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyMethodMayBeStaticInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyMethodOverridingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyMethodParametersInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyMissingConstructorInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyMissingOrEmptyDocstringInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyMissingTypeHintsInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyNamedTupleInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyNestedDecoratorsInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyNonAsciiCharInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyNoneFunctionAssignmentInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyOldStyleClassesInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyOverloadsInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true">
+        <option name="ignoredPackages">
+          <value>
+            <list size="0" />
+          </value>
+        </option>
+      </scope>
+      <option name="ignoredPackages">
+        <value>
+          <list size="150">
+            <item index="0" class="java.lang.String" itemvalue="greenlet" />
+            <item index="1" class="java.lang.String" itemvalue="tornado" />
+            <item index="2" class="java.lang.String" itemvalue="django-livereload-server" />
+            <item index="3" class="java.lang.String" itemvalue="humanize" />
+            <item index="4" class="java.lang.String" itemvalue="ua-parser" />
+            <item index="5" class="java.lang.String" itemvalue="prometheus-client" />
+            <item index="6" class="java.lang.String" itemvalue="flower" />
+            <item index="7" class="java.lang.String" itemvalue="gunicorn" />
+            <item index="8" class="java.lang.String" itemvalue="scikit-learn" />
+            <item index="9" class="java.lang.String" itemvalue="sendgrid" />
+            <item index="10" class="java.lang.String" itemvalue="django-debug-toolbar" />
+            <item index="11" class="java.lang.String" itemvalue="drf-spectacular" />
+            <item index="12" class="java.lang.String" itemvalue="networkx" />
+            <item index="13" class="java.lang.String" itemvalue="parameterized" />
+            <item index="14" class="java.lang.String" itemvalue="odfpy" />
+            <item index="15" class="java.lang.String" itemvalue="bs4" />
+            <item index="16" class="java.lang.String" itemvalue="PyYAML" />
+            <item index="17" class="java.lang.String" itemvalue="validators" />
+            <item index="18" class="java.lang.String" itemvalue="django-templated-mail" />
+            <item index="19" class="java.lang.String" itemvalue="pycparser" />
+            <item index="20" class="java.lang.String" itemvalue="python-slugify" />
+            <item index="21" class="java.lang.String" itemvalue="rfc3986" />
+            <item index="22" class="java.lang.String" itemvalue="redis" />
+            <item index="23" class="java.lang.String" itemvalue="djangorestframework-simplejwt" />
+            <item index="24" class="java.lang.String" itemvalue="django-resized" />
+            <item index="25" class="java.lang.String" itemvalue="Pygments" />
+            <item index="26" class="java.lang.String" itemvalue="sentry-sdk" />
+            <item index="27" class="java.lang.String" itemvalue="django-tinymce" />
+            <item index="28" class="java.lang.String" itemvalue="django-health-check" />
+            <item index="29" class="java.lang.String" itemvalue="celery-progress" />
+            <item index="30" class="java.lang.String" itemvalue="django-user-agents" />
+            <item index="31" class="java.lang.String" itemvalue="docutils" />
+            <item index="32" class="java.lang.String" itemvalue="petl" />
+            <item index="33" class="java.lang.String" itemvalue="soupsieve" />
+            <item index="34" class="java.lang.String" itemvalue="jsonschema" />
+            <item index="35" class="java.lang.String" itemvalue="xlrd" />
+            <item index="36" class="java.lang.String" itemvalue="goodtables" />
+            <item index="37" class="java.lang.String" itemvalue="ijson" />
+            <item index="38" class="java.lang.String" itemvalue="asgiref" />
+            <item index="39" class="java.lang.String" itemvalue="click" />
+            <item index="40" class="java.lang.String" itemvalue="python3-openid" />
+            <item index="41" class="java.lang.String" itemvalue="attrs" />
+            <item index="42" class="java.lang.String" itemvalue="simplejson" />
+            <item index="43" class="java.lang.String" itemvalue="boto3" />
+            <item index="44" class="java.lang.String" itemvalue="django-maintenance-mode" />
+            <item index="45" class="java.lang.String" itemvalue="jsonlines" />
+            <item index="46" class="java.lang.String" itemvalue="datapackage" />
+            <item index="47" class="java.lang.String" itemvalue="idna" />
+            <item index="48" class="java.lang.String" itemvalue="PyJWT" />
+            <item index="49" class="java.lang.String" itemvalue="cffi" />
+            <item index="50" class="java.lang.String" itemvalue="django-storages" />
+            <item index="51" class="java.lang.String" itemvalue="requests" />
+            <item index="52" class="java.lang.String" itemvalue="django-tables2" />
+            <item index="53" class="java.lang.String" itemvalue="fontawesome" />
+            <item index="54" class="java.lang.String" itemvalue="pyrsistent" />
+            <item index="55" class="java.lang.String" itemvalue="celery" />
+            <item index="56" class="java.lang.String" itemvalue="django-ranged-response" />
+            <item index="57" class="java.lang.String" itemvalue="prompt-toolkit" />
+            <item index="58" class="java.lang.String" itemvalue="cached-property" />
+            <item index="59" class="java.lang.String" itemvalue="django-fontawesome" />
+            <item index="60" class="java.lang.String" itemvalue="djangorestframework" />
+            <item index="61" class="java.lang.String" itemvalue="django-cors-headers" />
+            <item index="62" class="java.lang.String" itemvalue="django-datatables-view" />
+            <item index="63" class="java.lang.String" itemvalue="django-webpack-loader" />
+            <item index="64" class="java.lang.String" itemvalue="django-bootstrap-modal-forms" />
+            <item index="65" class="java.lang.String" itemvalue="botocore" />
+            <item index="66" class="java.lang.String" itemvalue="django-celery-results" />
+            <item index="67" class="java.lang.String" itemvalue="amqp" />
+            <item index="68" class="java.lang.String" itemvalue="django-mathfilters" />
+            <item index="69" class="java.lang.String" itemvalue="jsonpointer" />
+            <item index="70" class="java.lang.String" itemvalue="pandas" />
+            <item index="71" class="java.lang.String" itemvalue="pyld" />
+            <item index="72" class="java.lang.String" itemvalue="Django" />
+            <item index="73" class="java.lang.String" itemvalue="click-repl" />
+            <item index="74" class="java.lang.String" itemvalue="pytz" />
+            <item index="75" class="java.lang.String" itemvalue="edtf" />
+            <item index="76" class="java.lang.String" itemvalue="unicodecsv" />
+            <item index="77" class="java.lang.String" itemvalue="Pillow" />
+            <item index="78" class="java.lang.String" itemvalue="statistics" />
+            <item index="79" class="java.lang.String" itemvalue="tabulator" />
+            <item index="80" class="java.lang.String" itemvalue="shapely" />
+            <item index="81" class="java.lang.String" itemvalue="stringcase" />
+            <item index="82" class="java.lang.String" itemvalue="djangorestframework-datatables" />
+            <item index="83" class="java.lang.String" itemvalue="django-shapeshifter" />
+            <item index="84" class="java.lang.String" itemvalue="python-dateutil" />
+            <item index="85" class="java.lang.String" itemvalue="psycopg2-binary" />
+            <item index="86" class="java.lang.String" itemvalue="elasticsearch8" />
+            <item index="87" class="java.lang.String" itemvalue="kombu" />
+            <item index="88" class="java.lang.String" itemvalue="deepdiff" />
+            <item index="89" class="java.lang.String" itemvalue="django-extensions" />
+            <item index="90" class="java.lang.String" itemvalue="fsspec" />
+            <item index="91" class="java.lang.String" itemvalue="certifi" />
+            <item index="92" class="java.lang.String" itemvalue="django-multiselectfield" />
+            <item index="93" class="java.lang.String" itemvalue="commonmark" />
+            <item index="94" class="java.lang.String" itemvalue="vine" />
+            <item index="95" class="java.lang.String" itemvalue="slack-sdk" />
+            <item index="96" class="java.lang.String" itemvalue="beautifulsoup4" />
+            <item index="97" class="java.lang.String" itemvalue="django-celery-beat" />
+            <item index="98" class="java.lang.String" itemvalue="cryptography" />
+            <item index="99" class="java.lang.String" itemvalue="linear-tsv" />
+            <item index="100" class="java.lang.String" itemvalue="django-simple-captcha" />
+            <item index="101" class="java.lang.String" itemvalue="tableschema" />
+            <item index="102" class="java.lang.String" itemvalue="django-bootstrap-breadcrumbs" />
+            <item index="103" class="java.lang.String" itemvalue="django-filter" />
+            <item index="104" class="java.lang.String" itemvalue="pip-search" />
+            <item index="105" class="java.lang.String" itemvalue="charset-normalizer" />
+            <item index="106" class="java.lang.String" itemvalue="django-allauth" />
+            <item index="107" class="java.lang.String" itemvalue="djangorestframework-gis" />
+            <item index="108" class="java.lang.String" itemvalue="shellingham" />
+            <item index="109" class="java.lang.String" itemvalue="async-timeout" />
+            <item index="110" class="java.lang.String" itemvalue="frictionless" />
+            <item index="111" class="java.lang.String" itemvalue="SQLAlchemy" />
+            <item index="112" class="java.lang.String" itemvalue="django-geojson" />
+            <item index="113" class="java.lang.String" itemvalue="wcwidth" />
+            <item index="114" class="java.lang.String" itemvalue="click-didyoumean" />
+            <item index="115" class="java.lang.String" itemvalue="django-leaflet" />
+            <item index="116" class="java.lang.String" itemvalue="sqlparse" />
+            <item index="117" class="java.lang.String" itemvalue="requests-oauthlib" />
+            <item index="118" class="java.lang.String" itemvalue="urllib3" />
+            <item index="119" class="java.lang.String" itemvalue="billiard" />
+            <item index="120" class="java.lang.String" itemvalue="click-default-group" />
+            <item index="121" class="java.lang.String" itemvalue="typer" />
+            <item index="122" class="java.lang.String" itemvalue="ordered-set" />
+            <item index="123" class="java.lang.String" itemvalue="text-unidecode" />
+            <item index="124" class="java.lang.String" itemvalue="rich" />
+            <item index="125" class="java.lang.String" itemvalue="xlwt" />
+            <item index="126" class="java.lang.String" itemvalue="chardet" />
+            <item index="127" class="java.lang.String" itemvalue="geojson" />
+            <item index="128" class="java.lang.String" itemvalue="jmespath" />
+            <item index="129" class="java.lang.String" itemvalue="user-agents" />
+            <item index="130" class="java.lang.String" itemvalue="s3transfer" />
+            <item index="131" class="java.lang.String" itemvalue="django-guardian" />
+            <item index="132" class="java.lang.String" itemvalue="colorama" />
+            <item index="133" class="java.lang.String" itemvalue="django-timezone-field" />
+            <item index="134" class="java.lang.String" itemvalue="click-plugins" />
+            <item index="135" class="java.lang.String" itemvalue="simpleeval" />
+            <item index="136" class="java.lang.String" itemvalue="openpyxl" />
+            <item index="137" class="java.lang.String" itemvalue="torch" />
+            <item index="138" class="java.lang.String" itemvalue="numpy" />
+            <item index="139" class="java.lang.String" itemvalue="langchain-community" />
+            <item index="140" class="java.lang.String" itemvalue="scipy" />
+            <item index="141" class="java.lang.String" itemvalue="langchain" />
+            <item index="142" class="java.lang.String" itemvalue="matplotlib" />
+            <item index="143" class="java.lang.String" itemvalue="streamlit" />
+            <item index="144" class="java.lang.String" itemvalue="langchain-core" />
+            <item index="145" class="java.lang.String" itemvalue="langsmith" />
+            <item index="146" class="java.lang.String" itemvalue="tqdm" />
+            <item index="147" class="java.lang.String" itemvalue="pydantic" />
+            <item index="148" class="java.lang.String" itemvalue="pydantic_core" />
+            <item index="149" class="java.lang.String" itemvalue="packaging" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true">
+        <option name="ignoredErrors">
+          <list>
+            <option value="E111" />
+          </list>
+        </option>
+      </scope>
+      <option name="ignoredErrors">
+        <list>
+          <option value="E111" />
+          <option value="E114" />
+          <option value="E302" />
+          <option value="E305" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyPropertyAccessInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyPropertyDefinitionInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyProtectedMemberInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyProtocolInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyRedeclarationInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyRedundantParenthesesInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyRelativeImportInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyReturnFromInitInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PySetFunctionToLiteralInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyShadowingBuiltinsInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyShadowingNamesInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PySimplifyBooleanCheckInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PySingleQuotedDocstringInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyStatementEffectInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyStringFormatInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyStubPackagesAdvertiser" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyStubPackagesCompatibilityInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PySuperArgumentsInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyTestParametrizedInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyTrailingSemicolonInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyTupleAssignmentBalanceInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyTupleItemAssignmentInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyTypeCheckerInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyTypeHintsInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyTypedDictInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyUnboundLocalVariableInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyUnnecessaryBackslashInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyUnreachableCodeInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyUnusedLocalInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PyramidSetupInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="Query_bound_parameters" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="Query_index_required" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="Query_restricted" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="Restricted_Python_calls" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="SassScssResolvedByNameOnly" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="SassScssUnresolvedMixin" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="SassScssUnresolvedPlaceholderSelector" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="SassScssUnresolvedVariable" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="SpellCheckingInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <option name="processCode" value="true" />
+      <option name="processLiterals" value="true" />
+      <option name="processComments" value="true" />
+    </inspection_tool>
+    <inspection_tool class="SqlDialectInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="SqlNoDataSourceInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="TomlUnresolvedReference" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="UnusedDefine" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="XmlDefaultAttributeValue" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="XmlDeprecatedElement" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="XmlDuplicatedId" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="XmlHighlighting" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="XmlInvalidId" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="XmlPathReference" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="XmlUnboundNsPrefix" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="XmlUnusedNamespaceDeclaration" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="XmlWrongRootElement" enabled="false" level="ERROR" enabled_by_default="false" />
+  </profile>
+</component>
