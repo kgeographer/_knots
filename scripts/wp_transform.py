@@ -8,11 +8,10 @@ python scripts/wp_transform.py dump/wordpress_posts/knotty.wordpress.2025-09-14.
 """
 from __future__ import annotations
 import argparse, csv, html, re
-from datetime import datetime
+from datetime import datetime, timedelta, timezone
 # import xml.etree.ElementTree as ET
 from lxml import etree as ET
 import uuid
-from datetime import timedelta
 
 NS = {
     "content": "http://purl.org/rss/1.0/modules/content/",
@@ -35,22 +34,32 @@ def set_cdata(el, text: str):
     el.text = ET.CDATA(safe)
 
 def build_wxr_root(channel_title="Seed Import", channel_link="https://example.com", channel_desc="Tag seed"):
-    rss = ET.Element("rss", {"version": "2.0"})
-    # Register namespaces explicitly
+    # Register namespaces explicitly; lxml will serialize xmlns:* on the root as needed.
     for prefix, uri in NS.items():
         ET.register_namespace(prefix, uri)
+
+    rss = ET.Element("rss", {"version": "2.0"})
     channel = ET.SubElement(rss, "channel")
-    for tag, text in (("title", channel_title), ("link", channel_link), ("description", channel_desc)):
-        el = ET.SubElement(channel, tag)
-        el.text = text
+
+    # Basic channel metadata
+    ET.SubElement(channel, "title").text = channel_title
+    ET.SubElement(channel, "link").text = channel_link
+    ET.SubElement(channel, "description").text = channel_desc
+    ET.SubElement(channel, "generator").text = "WordPress/5.9.3; wp_transform seed-emitter"
+
+    # Minimal WXR marker so Substack treats this like a WP export
+    wxr = ET.SubElement(channel, f"{{{NS['wp']}}}wxr_version")
+    wxr.text = "1.2"
+
     return rss, channel
 
 def emit_tag_seed(mapping_tsv: str, out_path: str):
     """
     Build a minimal WXR that contains one post per mapped label.
     This forces Substack to create its own authoritative tag slugs for each label.
+    TSV columns expected: category, count, mapped label
     """
-    # Collect unique, non-empty mapped labels from mapping TSV (columns: category, count, mapped label)
+    # Collect unique, non-empty mapped labels
     labels = []
     with open(mapping_tsv, "r", encoding="utf-8") as f:
         rdr = csv.DictReader(f, delimiter="\t")
@@ -59,22 +68,48 @@ def emit_tag_seed(mapping_tsv: str, out_path: str):
             if dst and dst not in labels:
                 labels.append(dst)
 
-    rss, channel = build_wxr_root(channel_title="Substack Tag Seed", channel_desc="One post per tag label")
+    rss, channel = build_wxr_root(channel_title="Substack Tag Seed",
+                                  channel_desc="One post per tag label")
 
-    t0 = datetime.utcnow()
-    for i, label in enumerate(labels):
+    # Minimal author table so dc:creator resolves to a valid user
+    wp_author = ET.SubElement(channel, f"{{{NS['wp']}}}author")
+    ET.SubElement(wp_author, f"{{{NS['wp']}}}author_id").text = "1"
+    ET.SubElement(wp_author, f"{{{NS['wp']}}}author_login").text = "seed"
+    ET.SubElement(wp_author, f"{{{NS['wp']}}}author_display_name").text = "Seed"
+
+    t0 = datetime.now(timezone.utc)
+
+    for i, label in enumerate(labels, start=1):
+        link_slug = slugify(label)
+        unique_link = f"https://example.com/seed/{link_slug}-{i}"
+
         item = ET.SubElement(channel, "item")
-        title = ET.SubElement(item, "title");               title.text = f"(seed) {label}"
-        link  = ET.SubElement(item, "link");                link.text  = "https://example.com/seed"
-        guid  = ET.SubElement(item, "guid", {"isPermaLink": "false"}); guid.text = f"seed:{uuid.uuid4()}"
-        pub   = ET.SubElement(item, "pubDate");             pub.text   = (t0 + timedelta(seconds=i)).strftime("%a, %d %b %Y %H:%M:%S +0000")
+        ET.SubElement(item, "title").text = f"(seed) {label}"
+        ET.SubElement(item, "link").text = unique_link
 
-        # Minimal content, wrapped in CDATA
+        guid = ET.SubElement(item, "guid", {"isPermaLink": "false"})
+        guid.text = f"seed:{uuid.uuid4()}"
+
+        # Standard RSS pubDate (UTC)
+        ET.SubElement(item, "pubDate").text = (t0 + timedelta(seconds=i)).strftime("%a, %d %b %Y %H:%M:%S +0000")
+
+        # WordPress-ish fields so importers treat this as a real post
+        ET.SubElement(item, f"{{{NS['dc']}}}creator").text = "seed"
+        ET.SubElement(item, f"{{{NS['wp']}}}post_id").text = str(i)
+        ET.SubElement(item, f"{{{NS['wp']}}}post_date").text = (t0 + timedelta(seconds=i)).strftime("%Y-%m-%d %H:%M:%S")
+        ET.SubElement(item, f"{{{NS['wp']}}}post_date_gmt").text = (t0 + timedelta(seconds=i)).strftime("%Y-%m-%d %H:%M:%S")
+        ET.SubElement(item, f"{{{NS['wp']}}}post_name").text = f"seed-{link_slug}-{i}"
+        ET.SubElement(item, f"{{{NS['wp']}}}status").text = "publish"
+        ET.SubElement(item, f"{{{NS['wp']}}}post_type").text = "post"
+        ET.SubElement(item, f"{{{NS['wp']}}}comment_status").text = "closed"
+        ET.SubElement(item, f"{{{NS['wp']}}}ping_status").text = "closed"
+
+        # Minimal HTML content in CDATA
         content_el = ET.SubElement(item, f"{{{NS['content']}}}encoded")
         set_cdata(content_el, f"<p>Seeding tag: {html.escape(label)}</p>")
 
         # The tag itself. Substack will ignore nicename and derive its own slug from this label.
-        tag_el = ET.SubElement(item, "category", {"domain": "post_tag", "nicename": slugify(label)})
+        tag_el = ET.SubElement(item, "category", {"domain": "post_tag", "nicename": link_slug})
         tag_el.text = label
 
     tree = ET.ElementTree(rss)
