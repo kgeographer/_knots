@@ -1,0 +1,21 @@
+=========
+inventory existing categories
+ask jl to create mapping of old categories to new for substack tags
+explain way forward
+
+=========
+/ imported to Wordpress
+	need to repeat but with author values
+export all posts to knots_wp.xml
+edit knots_wp.xml
+	insert comments within content
+	replace <category> values with mappings
+import test to new substack pub in kgeographer
+create custom tags in two jl substack pubs: master, test
+import to test in jl account
+add tags to menu
+import all to master in jl account
+add tags to menu
+
+
+
