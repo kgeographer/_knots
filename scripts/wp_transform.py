@@ -40,12 +40,20 @@ def slugify(label: str) -> str:
     return s
 
 def load_mapping(tsv_path: str) -> dict[str, str]:
+    """
+    TSV columns: category, count, mapped label
+    Returns mapping from original category -> mapped label.
+    """
     mapping = {}
     with open(tsv_path, "r", encoding="utf-8") as f:
-        for row in csv.reader(f, delimiter="\t"):
-            if not row or len(row) < 2: continue
-            src, dst = row[0].strip(), row[1].strip()
-            if src: mapping[src] = dst  # empty dst => drop
+        rdr = csv.DictReader(f, delimiter="\t")
+        for row in rdr:
+            src = row["category"].strip()
+            dst = row["mapped label"].strip()
+            if not src:
+                continue
+            # if mapped label empty, drop it
+            mapping[src] = dst
     return mapping
 
 def dedupe_preserve_order(pairs):
