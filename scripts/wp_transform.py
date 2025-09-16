@@ -259,11 +259,14 @@ def append_comments_block(content_html: str, comments):
         author = html.escape(c["author"]) if c["author"] else "Anonymous"
         date_s = html.escape(format_wp_datetime(c["date"]))
         body = normalize_comment_body(c["body"])
-        block.append('<div style="margin-top:0.75em;">')
-        block.append(f'<div style="font-weight:600; color:#333;">{author}</div>')
-        block.append(f'<div style="font-size:0.85em; color:#777;">{date_s}</div>')
-        block.append(f'<div style="color:#444;">{body}</div>')
+        block.append('<div style="margin-top:1.25em;">')
+        block.append(f'<div style="font-weight:600; color:#333;">{author} <span style="font-size:0.85em; color:#777;">— {date_s}</span></div>')
+        block.append(f'<div style="color:#444; margin-top:0.25em;">{body}</div>')
         block.append('</div>')
+        block.append('<hr style="margin:1.5em 0; border:none; border-top:1px solid #ccc;"/>')
+    # Remove the last trailing <hr/> if present
+    if block and block[-1].startswith('<hr'):
+        block.pop()
     block.append('</div>')
     return content_html + ("\n" if not content_html.endswith("\n") else "") + "".join(block)
 
