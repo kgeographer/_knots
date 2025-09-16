@@ -113,7 +113,7 @@ def emit_tag_seed(mapping_tsv: str, out_path: str):
         tag_el.text = label
 
     tree = ET.ElementTree(rss)
-    tree.write(out_path, encoding="utf-8", xml_declaration=True)
+    tree.write(out_path, encoding="utf-8", xml_declaration=True, pretty_print=True)
 
 import re, unicodedata
 
@@ -359,8 +359,7 @@ def main():
         transform_item(it_copy, mapping, slug_overrides)
         channel.append(it_copy)
 
-
-    tree.write(args.wxr_out, encoding="utf-8", xml_declaration=True)
+    tree.write(args.wxr_out, encoding="utf-8", xml_declaration=True, pretty_print=True)
 
 if __name__ == "__main__":
     main()
