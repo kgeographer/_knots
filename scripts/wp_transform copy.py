@@ -11,8 +11,6 @@ import argparse, csv, html, re
 from datetime import datetime
 # import xml.etree.ElementTree as ET
 from lxml import etree as ET
-import uuid
-from datetime import timedelta
 
 NS = {
     "content": "http://purl.org/rss/1.0/modules/content/",
@@ -34,66 +32,25 @@ def set_cdata(el, text: str):
     safe = text.replace("]]>", "]]]]><![CDATA[>")
     el.text = ET.CDATA(safe)
 
-def build_wxr_root(channel_title="Seed Import", channel_link="https://example.com", channel_desc="Tag seed"):
-    rss = ET.Element("rss", {"version": "2.0"})
-    # Register namespaces explicitly
-    for prefix, uri in NS.items():
-        ET.register_namespace(prefix, uri)
-    channel = ET.SubElement(rss, "channel")
-    for tag, text in (("title", channel_title), ("link", channel_link), ("description", channel_desc)):
-        el = ET.SubElement(channel, tag)
-        el.text = text
-    return rss, channel
-
-def emit_tag_seed(mapping_tsv: str, out_path: str):
-    """
-    Build a minimal WXR that contains one post per mapped label.
-    This forces Substack to create its own authoritative tag slugs for each label.
-    """
-    # Collect unique, non-empty mapped labels from mapping TSV (columns: category, count, mapped label)
-    labels = []
-    with open(mapping_tsv, "r", encoding="utf-8") as f:
-        rdr = csv.DictReader(f, delimiter="\t")
-        for row in rdr:
-            dst = (row.get("mapped label") or "").strip()
-            if dst and dst not in labels:
-                labels.append(dst)
-
-    rss, channel = build_wxr_root(channel_title="Substack Tag Seed", channel_desc="One post per tag label")
-
-    t0 = datetime.utcnow()
-    for i, label in enumerate(labels):
-        item = ET.SubElement(channel, "item")
-        title = ET.SubElement(item, "title");               title.text = f"(seed) {label}"
-        link  = ET.SubElement(item, "link");                link.text  = "https://example.com/seed"
-        guid  = ET.SubElement(item, "guid", {"isPermaLink": "false"}); guid.text = f"seed:{uuid.uuid4()}"
-        pub   = ET.SubElement(item, "pubDate");             pub.text   = (t0 + timedelta(seconds=i)).strftime("%a, %d %b %Y %H:%M:%S +0000")
-
-        # Minimal content, wrapped in CDATA
-        content_el = ET.SubElement(item, f"{{{NS['content']}}}encoded")
-        set_cdata(content_el, f"<p>Seeding tag: {html.escape(label)}</p>")
-
-        # The tag itself. Substack will ignore nicename and derive its own slug from this label.
-        tag_el = ET.SubElement(item, "category", {"domain": "post_tag", "nicename": slugify(label)})
-        tag_el.text = label
-
-    tree = ET.ElementTree(rss)
-    tree.write(out_path, encoding="utf-8", xml_declaration=True)
-
 import re, unicodedata
 
 def slugify(label: str) -> str:
     s = unicodedata.normalize("NFKD", label).encode("ascii", "ignore").decode("ascii")
     s = s.lower().strip()
+
     # 1) normalize connectors to words/separators
-    s = s.replace("&", " and ")           # match Substack-like behavior
+    s = s.replace("&", " and ")           # match Substack's behavior
     s = re.sub(r"[\/]+", " ", s)          # slashes act as word breaks
+
     # 2) drop other punctuation except spaces/hyphens
     s = re.sub(r"[^\w\s-]", "", s)
+
     # 3) collapse whitespace to single hyphens
     s = re.sub(r"\s+", "-", s)
+
     # 4) collapse repeated hyphens and trim
     s = re.sub(r"-{2,}", "-", s).strip("-")
+
     return s
 
 def load_mapping(tsv_path: str) -> dict[str, str]:
@@ -112,24 +69,6 @@ def load_mapping(tsv_path: str) -> dict[str, str]:
             # if mapped label empty, drop it
             mapping[src] = dst
     return mapping
-
-def load_slug_overrides(tsv_path: str | None) -> dict[str, str]:
-    """
-    Optional TSV columns: label, substack_slug
-    Returns mapping from human label -> authoritative Substack slug.
-    """
-    if not tsv_path:
-        return {}
-    overrides = {}
-    with open(tsv_path, "r", encoding="utf-8") as f:
-        rdr = csv.DictReader(f, delimiter="\t")
-        # accept headers like: label, substack_slug
-        for row in rdr:
-            label = (row.get("label") or "").strip()
-            slug  = (row.get("substack_slug") or "").strip()
-            if label and slug:
-                overrides[label] = slug
-    return overrides
 
 def dedupe_preserve_order(pairs):
     seen = set(); out = []
@@ -168,14 +107,12 @@ def remove_existing_blocks(html_str: str) -> str:
         "", html_str, flags=re.DOTALL | re.IGNORECASE)
     return html_str
 
-def extract_final_tags(item: ET.Element, mapping: dict[str, str], slug_overrides: dict[str, str]):
+def extract_final_tags(item: ET.Element, mapping: dict[str, str]):
     pairs = []
     for cat in item.findall("category"):
-        if cat.get("domain") != "category":
-            continue
+        if cat.get("domain") != "category": continue
         label = (cat.text or "").strip()
-        if not label:
-            continue
+        if not label: continue
         mapped = mapping.get(label, None)
         if mapped is None:
             out_label = label
@@ -183,8 +120,7 @@ def extract_final_tags(item: ET.Element, mapping: dict[str, str], slug_overrides
             continue  # drop
         else:
             out_label = mapped
-        out_slug = slug_overrides.get(out_label) or slugify(out_label)
-        pairs.append((out_label, out_slug))
+        pairs.append((out_label, slugify(out_label)))
     return dedupe_preserve_order(pairs)
 
 def extract_eligible_comments(item: ET.Element):
@@ -226,9 +162,9 @@ def append_comments_block(content_html: str, comments):
     block.append('</div>')
     return content_html + ("\n" if not content_html.endswith("\n") else "") + "".join(block)
 
-def transform_item(item: ET.Element, mapping: dict[str, str], slug_overrides: dict[str, str]) -> None:
+def transform_item(item: ET.Element, mapping: dict[str, str]) -> None:
     # final tags
-    final_pairs = extract_final_tags(item, mapping, slug_overrides)
+    final_pairs = extract_final_tags(item, mapping)
     # rebuild tag elements
     for cat in list(item.findall("category")): item.remove(cat)
     for label, slug in final_pairs:
@@ -267,24 +203,9 @@ def main():
               "'tags' = require tags; 'comments' = require comments; "
               "'any' = tags OR comments; 'none' = no filtering.")
     )
-    ap.add_argument(
-        "--emit-tag-seed",
-        metavar="SEED_WXR_OUT",
-        help="Write a minimal WXR with one post per mapped label (to seed Substack tag slugs) and exit."
-    )
-    ap.add_argument(
-        "--slug-override",
-        metavar="TSV",
-        help="Optional TSV with columns: label, substack_slug. Overrides the slug used for tags and footer links."
-    )
     args = ap.parse_args()
 
-    if args.emit_tag_seed:
-        emit_tag_seed(args.mapping_tsv, args.emit_tag_seed)
-        return
-
     mapping = load_mapping(args.mapping_tsv)
-    slug_overrides = load_slug_overrides(args.slug_override)
     tree = ET.parse(args.wxr_in)
     root = tree.getroot()
     channel = root.find("channel")
@@ -299,7 +220,7 @@ def main():
     selected = []
     for it in orig_items:
         # inspect without mutation
-        tags = extract_final_tags(it, mapping, slug_overrides)
+        tags = extract_final_tags(it, mapping)
         comments = extract_eligible_comments(it)
         keep = True
         if args.filter == "both":
@@ -321,7 +242,7 @@ def main():
     # Transform and append
     for it in selected:
         it_copy = ET.fromstring(ET.tostring(it, encoding="utf-8"))
-        transform_item(it_copy, mapping, slug_overrides)
+        transform_item(it_copy, mapping)
         channel.append(it_copy)
 
 
