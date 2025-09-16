@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-# wp_transform.py
+# wp_transform.py Transform a WordPress WXR (XML) export for Substack import.
+"""
+usage:
+python scripts/wp_transform.py dump/wordpress_posts/knotty.wordpress.2025-09-14.000.xml \
+    work/category_mappings.tsv out/substack_import_sample.xml \
+  --filter both --limit 25
+"""
 from __future__ import annotations
 import argparse, csv, html, re
 from datetime import datetime
