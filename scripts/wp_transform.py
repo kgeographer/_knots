@@ -9,7 +9,8 @@ python scripts/wp_transform.py dump/wordpress_posts/knotty.wordpress.2025-09-14.
 from __future__ import annotations
 import argparse, csv, html, re
 from datetime import datetime
-import xml.etree.ElementTree as ET
+# import xml.etree.ElementTree as ET
+from lxml import etree as ET
 
 NS = {
     "content": "http://purl.org/rss/1.0/modules/content/",
@@ -25,6 +26,11 @@ for k, v in NS.items():
 
 TAGS_FOOTER_CLASS = "import-tags-footer"
 COMMENTS_WRAPPER_CLASS = "legacy-comments"
+
+def set_cdata(el, text: str):
+    # split any accidental ']]>' so CDATA remains well-formed
+    safe = text.replace("]]>", "]]]]><![CDATA[>")
+    el.text = ET.CDATA(safe)
 
 def slugify(label: str) -> str:
     s = label.strip().lower()
@@ -157,7 +163,8 @@ def transform_item(item: ET.Element, mapping: dict[str, str]) -> None:
 
     if content_el is None:
         content_el = ET.SubElement(item, f"{{{NS['content']}}}encoded")
-    content_el.text = content_html
+    # content_el.text = content_html
+    set_cdata(content_el, content_html)
 
 def main():
     ap = argparse.ArgumentParser(description="Transform WordPress WXR for Substack import.")
@@ -216,6 +223,9 @@ def main():
         transform_item(it_copy, mapping)
         channel.append(it_copy)
 
+
+    tree.write(args.wxr_out, encoding="utf-8", xml_declaration=True)
+    # at the end of main()
     tree.write(args.wxr_out, encoding="utf-8", xml_declaration=True)
 
 if __name__ == "__main__":
