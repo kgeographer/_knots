@@ -2,12 +2,17 @@
 # wp_transform.py Transform a WordPress WXR (XML) export for Substack import.
 """
 usage:
+# Example: randomly pick 25 from the 83 posts that have both tags and comments
 python scripts/wp_transform.py dump/wordpress_posts/knotty.wordpress.2025-09-14.000.xml \
-    work/category_mappings.tsv out/substack_import_sample.xml \
-  --filter both --limit 25
+  work/category_mappings.tsv out/substack_import_sample.xml \
+  --filter both --limit 25 --sample-random --sample-seed 42
+
+run with seed to repeatable random sampling
+run without seed to get a different random sample each time
+
 """
 from __future__ import annotations
-import argparse, csv, html, re
+import argparse, csv, html, re, random
 from datetime import datetime, timedelta, timezone
 # import xml.etree.ElementTree as ET
 from lxml import etree as ET
@@ -114,6 +119,7 @@ def emit_tag_seed(mapping_tsv: str, out_path: str):
 
     tree = ET.ElementTree(rss)
     tree.write(out_path, encoding="utf-8", xml_declaration=True, pretty_print=True)
+    print(f"[seed] Emitted {len(labels)} seed posts to {out_path}")
 
 import re, unicodedata
 
@@ -312,6 +318,16 @@ def main():
         metavar="TSV",
         help="Optional TSV with columns: label, substack_slug. Overrides the slug used for tags and footer links."
     )
+    ap.add_argument(
+        "--sample-random",
+        action="store_true",
+        help="If set with --limit, pick a random subset of size LIMIT from the filtered items."
+    )
+    ap.add_argument(
+        "--sample-seed",
+        type=int,
+        help="Optional seed for --sample-random to make selection reproducible."
+    )
     args = ap.parse_args()
 
     if args.emit_tag_seed:
@@ -349,9 +365,19 @@ def main():
         if keep:
             selected.append(it)
 
-    # Apply limit after filtering
+    total_items = len(orig_items)
+    selected_before_limit = len(selected)
+
+    # Apply limit after filtering (optionally as a random sample)
     if args.limit and args.limit > 0:
-        selected = selected[:args.limit]
+        if getattr(args, "sample_random", False) and len(selected) > args.limit:
+            if args.sample_seed is not None:
+                random.seed(args.sample_seed)
+            selected = random.sample(selected, args.limit)
+        else:
+            selected = selected[:args.limit]
+
+    emitted_count = len(selected)
 
     # Transform and append
     for it in selected:
@@ -360,6 +386,12 @@ def main():
         channel.append(it_copy)
 
     tree.write(args.wxr_out, encoding="utf-8", xml_declaration=True, pretty_print=True)
+    # Summary output
+    filt = getattr(args, "filter", "none")
+    lim = args.limit if args.limit else "none"
+    samp = "random" if getattr(args, "sample_random", False) and (args.limit and args.limit > 0) else "head"
+    seed = f", seed={args.sample_seed}" if getattr(args, "sample_random", False) and args.sample_seed is not None else ""
+    print(f"[transform] Source items: {total_items} | Selected (filter={filt}): {selected_before_limit} | Emitted (limit={lim}, sample={samp}{seed}): {emitted_count} | Wrote: {args.wxr_out}")
 
 if __name__ == "__main__":
     main()
