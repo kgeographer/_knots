@@ -1,0 +1,367 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- generator="WordPress.com" created="2025-09-14 10:07"-->
+<rss xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:wp="http://wordpress.org/export/1.2/" version="2.0">
+  <channel>
+<title>knotty</title>
+<link>https://kgnomad.wordpress.com</link>
+<description>a migration test</description>
+<pubDate>Sun, 14 Sep 2025 10:07:03 +0000</pubDate>
+<language>en</language>
+<wp:wxr_version>1.2</wp:wxr_version>
+<wp:base_site_url>http://wordpress.com/</wp:base_site_url>
+<wp:base_blog_url>https://kgnomad.wordpress.com</wp:base_blog_url>
+<wp:author>
+  <wp:author_id>1</wp:author_id>
+  <wp:author_login>seed</wp:author_login>
+  <wp:author_email>seed@example.com</wp:author_email>
+  <wp:author_display_name>Seed</wp:author_display_name>
+</wp:author>
+<generator>http://wordpress.com/</generator>
+
+<image>
+	<url>https://kgnomad.wordpress.com/wp-content/uploads/2025/09/cropped-bea.jpg?w=32</url>
+	<title>knotty</title>
+	<link>https://kgnomad.wordpress.com</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+<item>
+  <title>Powerless Point</title>
+  <link>https://kgnomad.wordpress.com/2008/04/10/powerless-point/</link>
+  <pubDate>Thu, 10 Apr 2008 08:19:39 +0000</pubDate>
+  <dc:creator>seed</dc:creator>
+  <guid isPermaLink="false">https://kgnomad.wordpress.com/2008/04/10/powerless-point/</guid>
+  <description/>
+  <content:encoded><![CDATA[<p>Last week, I was cleaning up a presentation (&quot;Virtual Teams in the Age of the Network&quot;) that I gave last Fall at the <a href="http://www.brookings.edu/execed/programs/empoweredexec.aspx">Brookings Executive Education program</a> for a new one I'm giving there next Tuesday. It was, let me see, a frustrating (no), aggravating (closer),&nbsp; *!#$%^***!! (getting there) experience.</p>
+<p>For reasons known only to some programmer (not even a developer) who's probably cashed out by now for life on a private Caribbean island, I could not change the footer. Page numbers would not appear. Bullet symbols would not convert from vertical lines to small dots. Line spacing would not reduce.&nbsp; Please don't send me suggestions as I didn't just fall off the PPT turnip truck. I tried saving with a new file name, copying content of troublesome slides to new slides, changing slide master, etc. We all know the tricks. A colleague with a PC (yes, I'm Mac, he's PC) - after struggling as well - was finally able to make most of the changes.</p>
+<p>So when I was asked to speak at the <a href="http://kmforum.org/blog/?cat=7">Boston KM Forum</a>, I decided to go slideless. Just stand up and speak. True, the topic lent itself to addressing the audience directly: &quot;Moving Beyond Web 2.0 Resistance.&quot; Which ultimately is not about technology but about people, ye ole' &quot;<a href="http://endlessknots.typepad.com/endlessknots/2007/07/90-people-smili.html">90% people, 10% technology</a>&quot; rule.</p>
+<p>When <a href="http://www.chaitassociates.com/">Larry Chait</a> introduced me, he said I would not be using slides. A hearty round of applause followed. And as I spoke, I sensed that people were actually listening, as in making eye contact, nodding their heads, responding when I asked questions. Note to other speakers out there: IT FELT GREAT!</p>
+<p><a href="http://kmspace.blogspot.com/2008/04/moving-beyond-web-20-resistance.html">Doug Cornelius</a> live-blogged my talk which Paul Levy has responded to with &quot;<a href="http://runningahospital.blogspot.com/2008/04/throw-off-crutches-of-ppt.html">Throw off the crutches of ppt!</a>&quot; - where he gives a really good list of reasons why Powerpoint may not be exactly the most powerful way to engage an audience. Read them both. And thanks, guys. Maybe we can teach a class about how to give a presentation without slides.</p>
+<p>One last thought: <a href="http://www.edwardtufte.com/tufte/powerpoint">Edward Tufte</a> gives a very good seminar (and has written an essay called &quot;The Cognitive Style of Powerpoint,&quot; in which he gives some excellent suggestions for how to use PPT if you must). I attended it a few years ago and, humbly, feel that when I do use slides, they're the better for it.</p>
+<p class="import-tags-footer"><strong>Tags:</strong><span> </span><a href="/t/virtual-remote-work" rel="nofollow ugc noopener">Virtual/Remote Work</a><span> · </span><a href="/t/travel" rel="nofollow ugc noopener">Travel</a><span> · </span><a href="/t/business-nonprofits" rel="nofollow ugc noopener">Business/Nonprofits</a><span> · </span><a href="/t/collaboration" rel="nofollow ugc noopener">Collaboration</a><span> · </span><a href="/t/web-tech" rel="nofollow ugc noopener">Web/Tech</a></p>
+<hr style="margin: 2em 0; border: none; border-top: 1px solid #ddd;"/><div class="legacy-comments" style="background-color:#f8f9fa; padding:1.5em; border-radius:6px;"><h4 style="color:#666;">Comments from Original Post</h4><div style="margin-top:1.25em;"><div style="font-weight:600; color:#333;">Cristián Saracco <span style="font-size:0.85em; color:#777;">— April 12, 2008 at 09:35 AM</span></div><div style="color:#444; margin-top:0.25em;">I&#x27;ve gone to several presentation with PPT, also to several without it...<br/>Also, I&#x27;ve been hearing presentation fo people who are reading his/her PPT... I admit, I hate this situations!<br/>Probably, the issue is that PPTs&#x27; are supporting the message (and only that) and the key is in the person that is communiacting, telling you a story, giving you some fantastic contents. If so, presentation are reinforced with words, images,...<br/>Some time ago, I posted a presentation in Brand 3.0 (www.webjam.com/brand30) to inspire other members of the blog... 30 slides, 30 images, 15 words... and the message was understood!... And I wasn&#x27;t there :)</div></div><hr style="margin:1.5em 0; border:none; border-top:1px solid #ccc;"/><div style="margin-top:1.25em;"><div style="font-weight:600; color:#333;">sadalit <span style="font-size:0.85em; color:#777;">— April 14, 2008 at 12:48 PM</span></div><div style="color:#444; margin-top:0.25em;">Jessica, it was a great talk, and now I can&#x27;t imagine it WITH ppt.<br/>I was particularly moved by your urging to be gentle (and persistent!) with those who are resistant to web 2.0 tools.  I had a personal experience with this (convincing my brother to try Flickr, a process that took many months but had a huge payoff) and I bet everyone in that room could have shared a story on the subject.  Thanks for bringing a real human side to the forum.</div></div><hr style="margin:1.5em 0; border:none; border-top:1px solid #ccc;"/><div style="margin-top:1.25em;"><div style="font-weight:600; color:#333;">jessica lipnack <span style="font-size:0.85em; color:#777;">— April 14, 2008 at 12:54 PM</span></div><div style="color:#444; margin-top:0.25em;">Cristian, Sadalit, thanks so much! Next time I&#x27;ll ask everyone to recall their experiences too.</div></div><hr style="margin:1.5em 0; border:none; border-top:1px solid #ccc;"/><div style="margin-top:1.25em;"><div style="font-weight:600; color:#333;">Marc Solomon <span style="font-size:0.85em; color:#777;">— April 14, 2008 at 04:54 PM</span></div><div style="color:#444; margin-top:0.25em;">I found your talk inspiring from the vantage of the implict change management badge that every KM professional wears on their sleeves.</div></div><hr style="margin:1.5em 0; border:none; border-top:1px solid #ccc;"/><div style="margin-top:1.25em;"><div style="font-weight:600; color:#333;">Gil Friend <span style="font-size:0.85em; color:#777;">— April 18, 2008 at 03:42 AM</span></div><div style="color:#444; margin-top:0.25em;">I must be old, since I remember when people used to communicate quite well <em>without</em> PPT!
+I don't mind using it when it enhances, I just hate that it's become obligatory. (My friend Joel calls the app "PowerlessPointless". ;-)
+If you must, great resources at http://www.presentationzen.blogs.com/ and http://www.presentationcoach.com/</div></div><hr style="margin:1.5em 0; border:none; border-top:1px solid #ccc;"/><div style="margin-top:1.25em;"><div style="font-weight:600; color:#333;">jessica lipnack <span style="font-size:0.85em; color:#777;">— April 18, 2008 at 09:20 AM</span></div><div style="color:#444; margin-top:0.25em;">What about overheads, Gil? &#x27;member those? I shudder thinking about all the plastic we generated and schlepped around to presentations back then. Both these resources you&#x27;ve provided look very useful. Thanks.</div></div><hr style="margin:1.5em 0; border:none; border-top:1px solid #ccc;"/><div style="margin-top:1.25em;"><div style="font-weight:600; color:#333;">document management service <span style="font-size:0.85em; color:#777;">— September 08, 2009 at 03:08 AM</span></div><div style="color:#444; margin-top:0.25em;">Its presentation differ from other posts..<br/>Keep it up...<br/>Regards,<br/>Paper document scanning</div></div></div>]]></content:encoded>
+  <excerpt:encoded/>
+  <wp:post_id>2528</wp:post_id>
+  <wp:post_date>2008-04-10 08:19:39</wp:post_date>
+  <wp:post_date_gmt>2008-04-10 08:19:39</wp:post_date_gmt>
+  <wp:post_modified>2008-04-10 08:19:39</wp:post_modified>
+  <wp:post_modified_gmt>2008-04-10 08:19:39</wp:post_modified_gmt>
+  <wp:comment_status>open</wp:comment_status>
+  <wp:ping_status>open</wp:ping_status>
+  <wp:post_name>powerless-point</wp:post_name>
+  <wp:status>publish</wp:status>
+  <wp:post_parent>0</wp:post_parent>
+  <wp:menu_order>0</wp:menu_order>
+  <wp:post_type>post</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+  <wp:postmeta>
+    <wp:meta_key>_publicize_pending</wp:meta_key>
+    <wp:meta_value>1</wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>reader_suggested_tags</wp:meta_key>
+    <wp:meta_value>["Writing","Education","Teaching","Technology","Learning"]</wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_import_original_date</wp:meta_key>
+    <wp:meta_value>09/08/2009 03:08:35 AM</wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_elasticsearch_data_sharing_indexed_on</wp:meta_key>
+    <wp:meta_value>2025-09-14 09:43:56</wp:meta_value>
+  </wp:postmeta>
+  <wp:comment>
+    <wp:comment_id>1056</wp:comment_id>
+    <wp:comment_author>Cristián Saracco</wp:comment_author>
+    <wp:comment_author_email>cristian@allegro234.net</wp:comment_author_email>
+    <wp:comment_author_url>http://www.webjam.com/brand30</wp:comment_author_url>
+    <wp:comment_author_IP>88.18.229.238</wp:comment_author_IP>
+    <wp:comment_date>2008-04-12 09:35:37</wp:comment_date>
+    <wp:comment_date_gmt>2008-04-12 09:35:37</wp:comment_date_gmt>
+    <wp:comment_content>I've gone to several presentation with PPT, also to several without it...
+Also, I've been hearing presentation fo people who are reading his/her PPT... I admit, I hate this situations!
+Probably, the issue is that PPTs' are supporting the message (and only that) and the key is in the person that is communiacting, telling you a story, giving you some fantastic contents. If so, presentation are reinforced with words, images,...
+Some time ago, I posted a presentation in Brand 3.0 (www.webjam.com/brand30) to inspire other members of the blog... 30 slides, 30 images, 15 words... and the message was understood!... And I wasn't there :)</wp:comment_content>
+    <wp:comment_approved>1</wp:comment_approved>
+    <wp:comment_type/>
+    <wp:comment_parent>0</wp:comment_parent>
+    <wp:comment_user_id>0</wp:comment_user_id>
+  </wp:comment>
+  <wp:comment>
+    <wp:comment_id>1057</wp:comment_id>
+    <wp:comment_author>sadalit</wp:comment_author>
+    <wp:comment_author_email>svanburen@kmainc.com</wp:comment_author_email>
+    <wp:comment_author_url>http://amatterofdegree.typepad.com/</wp:comment_author_url>
+    <wp:comment_author_IP>75.147.14.33</wp:comment_author_IP>
+    <wp:comment_date>2008-04-14 12:48:42</wp:comment_date>
+    <wp:comment_date_gmt>2008-04-14 12:48:42</wp:comment_date_gmt>
+    <wp:comment_content>Jessica, it was a great talk, and now I can't imagine it WITH ppt.
+I was particularly moved by your urging to be gentle (and persistent!) with those who are resistant to web 2.0 tools.  I had a personal experience with this (convincing my brother to try Flickr, a process that took many months but had a huge payoff) and I bet everyone in that room could have shared a story on the subject.  Thanks for bringing a real human side to the forum.</wp:comment_content>
+    <wp:comment_approved>1</wp:comment_approved>
+    <wp:comment_type/>
+    <wp:comment_parent>0</wp:comment_parent>
+    <wp:comment_user_id>0</wp:comment_user_id>
+  </wp:comment>
+  <wp:comment>
+    <wp:comment_id>1058</wp:comment_id>
+    <wp:comment_author>jessica lipnack</wp:comment_author>
+    <wp:comment_author_email>jessica.lipnack@netage.com</wp:comment_author_email>
+    <wp:comment_author_url>http://www.netage.com/endlessknots</wp:comment_author_url>
+    <wp:comment_author_IP>24.60.172.177</wp:comment_author_IP>
+    <wp:comment_date>2008-04-14 12:54:06</wp:comment_date>
+    <wp:comment_date_gmt>2008-04-14 12:54:06</wp:comment_date_gmt>
+    <wp:comment_content>Cristian, Sadalit, thanks so much! Next time I'll ask everyone to recall their experiences too.</wp:comment_content>
+    <wp:comment_approved>1</wp:comment_approved>
+    <wp:comment_type/>
+    <wp:comment_parent>0</wp:comment_parent>
+    <wp:comment_user_id>0</wp:comment_user_id>
+  </wp:comment>
+  <wp:comment>
+    <wp:comment_id>1059</wp:comment_id>
+    <wp:comment_author>Marc Solomon</wp:comment_author>
+    <wp:comment_author_email>spinvillage@yahoo.com</wp:comment_author_email>
+    <wp:comment_author_url>http://attspin.blogspot.com</wp:comment_author_url>
+    <wp:comment_author_IP>199.171.216.254</wp:comment_author_IP>
+    <wp:comment_date>2008-04-14 16:54:36</wp:comment_date>
+    <wp:comment_date_gmt>2008-04-14 16:54:36</wp:comment_date_gmt>
+    <wp:comment_content>I found your talk inspiring from the vantage of the implict change management badge that every KM professional wears on their sleeves.</wp:comment_content>
+    <wp:comment_approved>1</wp:comment_approved>
+    <wp:comment_type/>
+    <wp:comment_parent>0</wp:comment_parent>
+    <wp:comment_user_id>0</wp:comment_user_id>
+  </wp:comment>
+  <wp:comment>
+    <wp:comment_id>1060</wp:comment_id>
+    <wp:comment_author>Gil Friend</wp:comment_author>
+    <wp:comment_author_email>gfriend@natlogic.com</wp:comment_author_email>
+    <wp:comment_author_url>http://blogs.natlogic.com/friend</wp:comment_author_url>
+    <wp:comment_author_IP>24.130.191.17</wp:comment_author_IP>
+    <wp:comment_date>2008-04-18 03:42:58</wp:comment_date>
+    <wp:comment_date_gmt>2008-04-18 03:42:58</wp:comment_date_gmt>
+    <wp:comment_content>I must be old, since I remember when people used to communicate quite well &lt;em&gt;without&lt;/em&gt; PPT!
+I don't mind using it when it enhances, I just hate that it's become obligatory. (My friend Joel calls the app "PowerlessPointless". ;-)
+If you must, great resources at http://www.presentationzen.blogs.com/ and http://www.presentationcoach.com/</wp:comment_content>
+    <wp:comment_approved>1</wp:comment_approved>
+    <wp:comment_type/>
+    <wp:comment_parent>0</wp:comment_parent>
+    <wp:comment_user_id>0</wp:comment_user_id>
+  </wp:comment>
+  <wp:comment>
+    <wp:comment_id>1061</wp:comment_id>
+    <wp:comment_author>jessica lipnack</wp:comment_author>
+    <wp:comment_author_email>jessica.lipnack@netage.com</wp:comment_author_email>
+    <wp:comment_author_url>http://www.netage.com/endlessknots</wp:comment_author_url>
+    <wp:comment_author_IP>96.224.30.34</wp:comment_author_IP>
+    <wp:comment_date>2008-04-18 09:20:59</wp:comment_date>
+    <wp:comment_date_gmt>2008-04-18 09:20:59</wp:comment_date_gmt>
+    <wp:comment_content>What about overheads, Gil? 'member those? I shudder thinking about all the plastic we generated and schlepped around to presentations back then. Both these resources you've provided look very useful. Thanks.</wp:comment_content>
+    <wp:comment_approved>1</wp:comment_approved>
+    <wp:comment_type/>
+    <wp:comment_parent>0</wp:comment_parent>
+    <wp:comment_user_id>0</wp:comment_user_id>
+  </wp:comment>
+  <wp:comment>
+    <wp:comment_id>1062</wp:comment_id>
+    <wp:comment_author>document management service</wp:comment_author>
+    <wp:comment_author_email>remya@sblinfo.com</wp:comment_author_email>
+    <wp:comment_author_url>http://www.saibposervices.com/Document_management_Services.aspx</wp:comment_author_url>
+    <wp:comment_author_IP>203.200.142.215</wp:comment_author_IP>
+    <wp:comment_date>2009-09-08 03:08:35</wp:comment_date>
+    <wp:comment_date_gmt>2009-09-08 03:08:35</wp:comment_date_gmt>
+    <wp:comment_content>Its presentation differ from other posts..
+Keep it up...
+Regards,
+Paper document scanning</wp:comment_content>
+    <wp:comment_approved>1</wp:comment_approved>
+    <wp:comment_type/>
+    <wp:comment_parent>0</wp:comment_parent>
+    <wp:comment_user_id>0</wp:comment_user_id>
+  </wp:comment>
+<category domain="post_tag" nicename="virtual-remote-work">Virtual/Remote Work</category><category domain="post_tag" nicename="travel">Travel</category><category domain="post_tag" nicename="business-nonprofits">Business/Nonprofits</category><category domain="post_tag" nicename="collaboration">Collaboration</category><category domain="post_tag" nicename="web-tech">Web/Tech</category></item><item>
+  <title>NESHOBA: film premiere, Sun, Sept 14, 2008, Boston</title>
+  <link>https://kgnomad.wordpress.com/2008/09/06/neshoba-film-pr/</link>
+  <pubDate>Sat, 06 Sep 2008 15:20:29 +0000</pubDate>
+  <dc:creator>seed</dc:creator>
+  <guid isPermaLink="false">https://kgnomad.wordpress.com/2008/09/06/neshoba-film-pr/</guid>
+  <description/>
+  <content:encoded><![CDATA[<p><em><a href="http://endlessknots.typepad.com/.shared/image.html?/photos/uncategorized/2008/09/06/cof_goodman_2.jpg"><img width="100" height="130" border="0" src="http://kgnomad.wordpress.com/wp-content/uploads/2008/09/cof_goodman_2.jpg" title="Cof_goodman_2" alt="Cof_goodman_2" style="margin: 0px 5px 5px 0px;float: left" /></a>
+I just received this email from my friend, <a href="http://endlessknots.typepad.com/endlessknots/2008/05/champions-of-fr.html">David Goodman</a>, left at <a href="http://freedomhouse.com/">Champions of Freedom</a> event here in Boston this past May, about the premiere of &quot;Neshoba,&quot; a film about the Mississippi county where his brother, <a href="http://endlessknots.typepad.com/endlessknots/2007/06/remembering-and.html">Andrew Goodman</a>, Michael Schwerner, and James Chaney, were murdered 40 years ago. I hope you can all come.</em> <em>David will be here for the showing.</em></p>
+<p>To My Boston Friends: </p>
+<p>Tony Pagano and Micki Dickoff&nbsp; are proud to announce the world theatrical premiere of their&nbsp; film NESHOBA at the Boston Film Festival on&nbsp; Sunday, September 14th at 6&nbsp; PM. The Andrew Goodman Foundation was a major source of funding for this 90 minutes documentary. </p>
+<p> SYNOPSIS: Neshoba (As in Philadelphia, (Neshoba County), Mississippi)&nbsp; tells the story of a&nbsp; Mississippi town still divided&nbsp; about the meaning of justice, 40 years after the murders of civil rights workers&nbsp; James Chaney, Andrew Goodman and Michael Schwerner.&nbsp; Although Klansmen bragged openly about&nbsp; what they did in 1964, no one was held accountable until 2005, when the State&nbsp; indicted Preacher Edgar Ray Killen, an 80-year-old notorious racist and alleged&nbsp; mastermind of the killings. Killen was only one of the 18 known KKK members who constituted the vigilante posse who murdered these three young men..&nbsp; Through&nbsp; intimate interviews with the families of the victims, candid interviews with&nbsp; black and white Neshoba County citizens, and&nbsp; exclusive, first time, interviews with Killen, the film explores whether the&nbsp; prosecution of one unrepentant Klansman constitutes justice and whether real&nbsp; healing and reconciliation are possible without telling the unvarnished&nbsp; truth. </p>
+<p>If you plan to come, please get tickets in advance.&nbsp; We would love you to be there to share&nbsp; this special time with us.&nbsp; And&nbsp; please tell all your friends and family who live in&nbsp; Boston to join us&nbsp; too.</p>
+<p>NESHOBA has also&nbsp; been selected to screen at the New&nbsp; York theatrical premiere at the New York International Independent Film &amp; Video&nbsp; Festival on Saturday, September 20th, at 6&nbsp; PM and Indie Memphis and at the Ft. Lauderdale International Film Festival, both in October.&nbsp; &nbsp;Please tell friends living in these cities to support our film.&nbsp; We’re waiting to hear from other&nbsp; festivals and will keep you updated on future&nbsp; screenings. </p>
+<p>BOSTON FILM FESTIVAL <br />Sunday,&nbsp; September 14th at 6&nbsp; PM&nbsp; <br />Kendall Square Cinema <br />One&nbsp; Kendall Square <br />Cambridge,&nbsp; MA02139 <br />(617) 499-1996&nbsp; </p>
+<p>On-line ticket&nbsp; information:&nbsp; <a href="http://www.landmarktheaters.com ">www.landmarktheaters.com <br /></a></p>
+<p class="import-tags-footer"><strong>Tags:</strong><span> </span><a href="/t/culture-religion-inspiration" rel="nofollow ugc noopener">Culture/Religion/Inspiration</a><span> · </span><a href="/t/friends-and-family" rel="nofollow ugc noopener">Friends &amp; Family</a><span> · </span><a href="/t/death-and-dying" rel="nofollow ugc noopener">Death &amp; Dying</a></p>
+<hr style="margin: 2em 0; border: none; border-top: 1px solid #ddd;"/><div class="legacy-comments" style="background-color:#f8f9fa; padding:1.5em; border-radius:6px;"><h4 style="color:#666;">Comments from Original Post</h4><div style="margin-top:1.25em;"><div style="font-weight:600; color:#333;">Susan Sonnen <span style="font-size:0.85em; color:#777;">— September 06, 2008 at 08:30 PM</span></div><div style="color:#444; margin-top:0.25em;">I wish that I could see this.</div></div><hr style="margin:1.5em 0; border:none; border-top:1px solid #ccc;"/><div style="margin-top:1.25em;"><div style="font-weight:600; color:#333;">jessica lipnack <span style="font-size:0.85em; color:#777;">— September 07, 2008 at 06:28 AM</span></div><div style="color:#444; margin-top:0.25em;">With luck, it will play near you. Appears that it will screen in a number of cities.</div></div><hr style="margin:1.5em 0; border:none; border-top:1px solid #ccc;"/><div style="margin-top:1.25em;"><div style="font-weight:600; color:#333;">Angel Johnson <span style="font-size:0.85em; color:#777;">— November 28, 2008 at 12:19 AM</span></div><div style="color:#444; margin-top:0.25em;">Can someone please tell me when and where &quot;Neshoba&quot; will be shown in Mississippi?  I live in Meridian and I would really love to see it.  I met Ms. Dickoff at the funeral of Ms. Fannie Lee Chaney and that is where I found out about her film.</div></div></div>]]></content:encoded>
+  <excerpt:encoded/>
+  <wp:post_id>2217</wp:post_id>
+  <wp:post_date>2008-09-06 15:20:29</wp:post_date>
+  <wp:post_date_gmt>2008-09-06 15:20:29</wp:post_date_gmt>
+  <wp:post_modified>2025-09-14 09:41:43</wp:post_modified>
+  <wp:post_modified_gmt>2025-09-14 09:41:43</wp:post_modified_gmt>
+  <wp:comment_status>open</wp:comment_status>
+  <wp:ping_status>open</wp:ping_status>
+  <wp:post_name>neshoba-film-pr</wp:post_name>
+  <wp:status>publish</wp:status>
+  <wp:post_parent>0</wp:post_parent>
+  <wp:menu_order>0</wp:menu_order>
+  <wp:post_type>post</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+  <wp:postmeta>
+    <wp:meta_key>_publicize_pending</wp:meta_key>
+    <wp:meta_value>1</wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_import_original_date</wp:meta_key>
+    <wp:meta_value>11/28/2008 12:19:54 AM</wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_elasticsearch_data_sharing_indexed_on</wp:meta_key>
+    <wp:meta_value>2025-09-14 09:42:43</wp:meta_value>
+  </wp:postmeta>
+  <wp:comment>
+    <wp:comment_id>885</wp:comment_id>
+    <wp:comment_author>Susan Sonnen</wp:comment_author>
+    <wp:comment_author_email>susan.sonnen@gmail.com</wp:comment_author_email>
+    <wp:comment_author_url>http://susansonnen.blogspot.com/</wp:comment_author_url>
+    <wp:comment_author_IP>24.136.24.22</wp:comment_author_IP>
+    <wp:comment_date>2008-09-06 20:30:11</wp:comment_date>
+    <wp:comment_date_gmt>2008-09-06 20:30:11</wp:comment_date_gmt>
+    <wp:comment_content>I wish that I could see this.</wp:comment_content>
+    <wp:comment_approved>1</wp:comment_approved>
+    <wp:comment_type/>
+    <wp:comment_parent>0</wp:comment_parent>
+    <wp:comment_user_id>0</wp:comment_user_id>
+  </wp:comment>
+  <wp:comment>
+    <wp:comment_id>886</wp:comment_id>
+    <wp:comment_author>jessica lipnack</wp:comment_author>
+    <wp:comment_author_email>jessica.lipnack@netage.com</wp:comment_author_email>
+    <wp:comment_author_url>http://www.netage.com/endlessknots</wp:comment_author_url>
+    <wp:comment_author_IP>96.224.98.54</wp:comment_author_IP>
+    <wp:comment_date>2008-09-07 06:28:33</wp:comment_date>
+    <wp:comment_date_gmt>2008-09-07 06:28:33</wp:comment_date_gmt>
+    <wp:comment_content>With luck, it will play near you. Appears that it will screen in a number of cities.</wp:comment_content>
+    <wp:comment_approved>1</wp:comment_approved>
+    <wp:comment_type/>
+    <wp:comment_parent>0</wp:comment_parent>
+    <wp:comment_user_id>0</wp:comment_user_id>
+  </wp:comment>
+  <wp:comment>
+    <wp:comment_id>887</wp:comment_id>
+    <wp:comment_author>Angel Johnson</wp:comment_author>
+    <wp:comment_author_email>angelsings95@yahoo.com</wp:comment_author_email>
+    <wp:comment_author_url/>
+    <wp:comment_author_IP>69.244.201.239</wp:comment_author_IP>
+    <wp:comment_date>2008-11-28 00:19:54</wp:comment_date>
+    <wp:comment_date_gmt>2008-11-28 00:19:54</wp:comment_date_gmt>
+    <wp:comment_content>Can someone please tell me when and where "Neshoba" will be shown in Mississippi?  I live in Meridian and I would really love to see it.  I met Ms. Dickoff at the funeral of Ms. Fannie Lee Chaney and that is where I found out about her film.</wp:comment_content>
+    <wp:comment_approved>1</wp:comment_approved>
+    <wp:comment_type/>
+    <wp:comment_parent>0</wp:comment_parent>
+    <wp:comment_user_id>0</wp:comment_user_id>
+  </wp:comment>
+<category domain="post_tag" nicename="culture-religion-inspiration">Culture/Religion/Inspiration</category><category domain="post_tag" nicename="friends-and-family">Friends &amp; Family</category><category domain="post_tag" nicename="death-and-dying">Death &amp; Dying</category></item><item>
+  <title>My friend Linda: "the bravest person I've ever known"</title>
+  <link>https://kgnomad.wordpress.com/2007/07/07/my-friend-linda/</link>
+  <pubDate>Sat, 07 Jul 2007 08:48:37 +0000</pubDate>
+  <dc:creator>seed</dc:creator>
+  <guid isPermaLink="false">https://kgnomad.wordpress.com/2007/07/07/my-friend-linda/</guid>
+  <description/>
+  <content:encoded><![CDATA[<p>Four years ago today at about seven in the evening, my best friend, Linda Bryce Russell Haber, died in NYU Hospital. The <a href="http://query.nytimes.com/gst/fullpage.html?res=9906EEDC133FF936A15754C0A9659C8B63">death notice</a> in the New York Times announced her memorial service but it did not capture her spirit.</p>
+<p>On the &quot;jump page&quot; here, as the newspapers call it, I'll add a few paragraphs that I read at her memorial.&nbsp; If you die in NYC, have your service where Linda's was held: <a href="http://15stfriends.quaker.org/">The Fifteenth Street Meeting House</a>, in the handful of most beautiful buildings in the city. Set on a park, all white interior with simple benches, in the spirit of The Society of Friends.</p>
+<p>I met Linda when I was 15; she was a year younger but had skipped a grade. We were incoming sophomores at <a href="http://www.georgeschool.org/">George School</a>, the Quaker boarding school in Newtown, PA. Within weeks we were the best of friends. Then as can happen with friends, we had a 20-year hiatus, reconnecting five years before she died.</p>
+<p>Cause of death: At 39, Linda survived an aortic dissection, the result of her having <a href="http://www.webmd.com/heart-disease/guide/marfan-syndrome">Marfan Syndrome</a>, the genetic disease that strikes down seemingly healthy basketball players. Linda had the same physique as they -- tall, very long limbs, long fingers -- and she was a phenomenal athlete, the tennis player that no one, including the boys in our school, could beat. As she was recovering from the dissection, she developed kidney disease, also genetic, leading to a kidney transplant. Recovering from that--and while taking massive quantities of anti-rejection drugs--she developed endocarditis. Then, as she was just about out of the woods, the truly unexpected: her beloved, healthy, athletic, funny husband, David Haber, was diagnosed with glioblastoma, the brain tumor so difficult to survive. Linda died six months after David's diagnosis, suffering an aortic aneurysm while hoisting her oxygen tank into the car on her way to bring David home following one of his surgeries. David died eighteen months later.</p>
+<p>When she died, her nephrologist called her &quot;the bravest person I've ever known.&quot; More here...</p>
+
+<!--more-->
+<p>Linda came close to dying several times, once two years before she actually did. I wrote a letter to her then, which I read in full at her memorial. Here are a few grafs (again newspaper-talk):</p>
+<p><em>...You were an immediate icon in the school. Gorgeous, tall, athletic, brilliant, funny, and the younger sister of two alums, as well as the daughter of one. Quaker, from Sewickley, and perhaps the best tennis player George School had ever seen. You swore on the court, became angry at yourself with such vengeance that it scared your opponents. What if you became that angry at her? You had the largest vocabulary of anyone in the school, including the teachers. The most beautiful arches. Boys in line in adoration, M., chief among them. He so brilliant that no one could understand him — except you. You spoke French and Russian brilliantly, one of a handful of students whom Madame V nurtured (while I., her son, was in the line of boys). Cool. So Cool...<br /><br />I don’t remember becoming best friends. I do know that we instantly were. We were the teenage friends that others our age wish they had had. No secrets. Nothing sacred. We laughed to tears before we could cry. Gossip. More gossip. Ideas, intellectualizing, hypothesizing, philosophizing, spiritualizing, psychoanalyzing ourselves, each other, and everyone else. Sharing our psychic powers. Sneaking to the woods to smoke even though it made us sick and dizzy. Traveling by train to Philadelphia, where we scarffed down eggs, sausage, and potatoes just a few blocks from the train station, and to New York, where we ate cream cheese omelettes by the dozens at Tant Mieux, and of course traveling to Pottstown. Suffering through our mutual ailments. Dissecting our past, present, and future boyfriends until they were dust. Finally sharing a room our senior year, an excruciating one for both of us...<br /><br />Our legacy of laughter and pain reincarnated instantly three years, three months, and two days ago when I returned your phone call of the previous evening, my birthday. Just a few months earlier, your picture from junior year had fallen out of my carton of George School memories. I had tried to find you without luck the year before, calling all the Linda Russells in New Jersey. This time I wondered if I could conjure you up so I placed your picture on my bookcase and looked at it every day. Apparently my call got through...<br /><br />Our phone calls of the last three years, enough to wrap around the earth a million times (whatever that means), but certainly enough to keep your darling, devoted David glued to his phone bill, have been our mutual mothering. Calling you is a singular joy — you always happy to hear from me, ready with incisive advice that I may not want to hear, penetrating inside problems, and revealing their core while I rush past. You grab me, make me stop, and really look. You understand. You know me. And I miss you terribly already, Linda.</em></p>
+<p class="import-tags-footer"><strong>Tags:</strong><span> </span><a href="/t/friends-and-family" rel="nofollow ugc noopener">Friends &amp; Family</a><span> · </span><a href="/t/death-and-dying" rel="nofollow ugc noopener">Death &amp; Dying</a></p>
+<hr style="margin: 2em 0; border: none; border-top: 1px solid #ddd;"/><div class="legacy-comments" style="background-color:#f8f9fa; padding:1.5em; border-radius:6px;"><h4 style="color:#666;">Comments from Original Post</h4><div style="margin-top:1.25em;"><div style="font-weight:600; color:#333;">STEVE LYNCH <span style="font-size:0.85em; color:#777;">— February 21, 2008 at 05:01 PM</span></div><div style="color:#444; margin-top:0.25em;">HI:<br/>DAVE HABER WAS MY CLOSEST FRIEND,  WE SPENT MANY HOURS AT MY STUDIO ON PARK AVE. SO.  I WAS ALSO A GREAT FRIEND OF LITTLE HERMAN AND BIG AL (DAVIDS PARENTS)  IN 1970 I MOVED TO MEXICO, AND DAVID CAME SHORTLY AFTER.<br/>DAVID STAYED IN MEXICO WITH ME FOR A YEAR,  WE REALLY LIVED A BUTCH AND SUNDANCE LIFE.<br/>GOD, I MISS THEM BOTH.<br/>SALUDOS<br/>STEVE</div></div><hr style="margin:1.5em 0; border:none; border-top:1px solid #ccc;"/><div style="margin-top:1.25em;"><div style="font-weight:600; color:#333;">jessica lipnack <span style="font-size:0.85em; color:#777;">— February 21, 2008 at 05:47 PM</span></div><div style="color:#444; margin-top:0.25em;">Steve, this is incredible. How did you find my blog? I miss Linda every day, every day, as you can imagine.  I&#x27;m sorry we never crossed paths when they were both alive. If you were at Linda&#x27;s memorial service, I sat with David and was the person who gave her eulogy.</div></div><hr style="margin:1.5em 0; border:none; border-top:1px solid #ccc;"/><div style="margin-top:1.25em;"><div style="font-weight:600; color:#333;">Jim <span style="font-size:0.85em; color:#777;">— July 07, 2009 at 08:25 AM</span></div><div style="color:#444; margin-top:0.25em;">jessica, what a moving tribute to Linda - and Dave. And what incredibly sad story. Thank you for sharing your thoughts and feelings on what must be a difficult day for you. Life just isn&#x27;t fair, but clearly those two were exceptional human beings.</div></div></div>]]></content:encoded>
+  <excerpt:encoded/>
+  <wp:post_id>3106</wp:post_id>
+  <wp:post_date>2007-07-07 08:48:37</wp:post_date>
+  <wp:post_date_gmt>2007-07-07 08:48:37</wp:post_date_gmt>
+  <wp:post_modified>2007-07-07 08:48:37</wp:post_modified>
+  <wp:post_modified_gmt>2007-07-07 08:48:37</wp:post_modified_gmt>
+  <wp:comment_status>open</wp:comment_status>
+  <wp:ping_status>open</wp:ping_status>
+  <wp:post_name>my-friend-linda</wp:post_name>
+  <wp:status>publish</wp:status>
+  <wp:post_parent>0</wp:post_parent>
+  <wp:menu_order>0</wp:menu_order>
+  <wp:post_type>post</wp:post_type>
+  <wp:post_password/>
+  <wp:is_sticky>0</wp:is_sticky>
+  <wp:postmeta>
+    <wp:meta_key>_publicize_pending</wp:meta_key>
+    <wp:meta_value>1</wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>reader_suggested_tags</wp:meta_key>
+    <wp:meta_value>["Writing","Books","Fiction","Life","Memories"]</wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_import_original_date</wp:meta_key>
+    <wp:meta_value>07/07/2009 08:25:53 AM</wp:meta_value>
+  </wp:postmeta>
+  <wp:postmeta>
+    <wp:meta_key>_elasticsearch_data_sharing_indexed_on</wp:meta_key>
+    <wp:meta_value>2025-09-14 09:47:27</wp:meta_value>
+  </wp:postmeta>
+  <wp:comment>
+    <wp:comment_id>1534</wp:comment_id>
+    <wp:comment_author>STEVE LYNCH</wp:comment_author>
+    <wp:comment_author_email>stevelynch@wtcmexico.com.mx</wp:comment_author_email>
+    <wp:comment_author_url/>
+    <wp:comment_author_IP>200.94.210.61</wp:comment_author_IP>
+    <wp:comment_date>2008-02-21 17:01:41</wp:comment_date>
+    <wp:comment_date_gmt>2008-02-21 17:01:41</wp:comment_date_gmt>
+    <wp:comment_content>HI:
+DAVE HABER WAS MY CLOSEST FRIEND,  WE SPENT MANY HOURS AT MY STUDIO ON PARK AVE. SO.  I WAS ALSO A GREAT FRIEND OF LITTLE HERMAN AND BIG AL (DAVIDS PARENTS)  IN 1970 I MOVED TO MEXICO, AND DAVID CAME SHORTLY AFTER.
+DAVID STAYED IN MEXICO WITH ME FOR A YEAR,  WE REALLY LIVED A BUTCH AND SUNDANCE LIFE.
+GOD, I MISS THEM BOTH.
+SALUDOS
+STEVE</wp:comment_content>
+    <wp:comment_approved>1</wp:comment_approved>
+    <wp:comment_type/>
+    <wp:comment_parent>0</wp:comment_parent>
+    <wp:comment_user_id>0</wp:comment_user_id>
+  </wp:comment>
+  <wp:comment>
+    <wp:comment_id>1535</wp:comment_id>
+    <wp:comment_author>jessica lipnack</wp:comment_author>
+    <wp:comment_author_email>jessica.lipnack@netage.com</wp:comment_author_email>
+    <wp:comment_author_url>http://www.endlessknots.typepad.com</wp:comment_author_url>
+    <wp:comment_author_IP>24.91.38.29</wp:comment_author_IP>
+    <wp:comment_date>2008-02-21 17:47:02</wp:comment_date>
+    <wp:comment_date_gmt>2008-02-21 17:47:02</wp:comment_date_gmt>
+    <wp:comment_content>Steve, this is incredible. How did you find my blog? I miss Linda every day, every day, as you can imagine.  I'm sorry we never crossed paths when they were both alive. If you were at Linda's memorial service, I sat with David and was the person who gave her eulogy.</wp:comment_content>
+    <wp:comment_approved>1</wp:comment_approved>
+    <wp:comment_type/>
+    <wp:comment_parent>0</wp:comment_parent>
+    <wp:comment_user_id>0</wp:comment_user_id>
+  </wp:comment>
+  <wp:comment>
+    <wp:comment_id>1536</wp:comment_id>
+    <wp:comment_author>Jim</wp:comment_author>
+    <wp:comment_author_email>jim@thefutureofwork.net</wp:comment_author_email>
+    <wp:comment_author_url/>
+    <wp:comment_author_IP>24.7.69.135</wp:comment_author_IP>
+    <wp:comment_date>2009-07-07 08:25:53</wp:comment_date>
+    <wp:comment_date_gmt>2009-07-07 08:25:53</wp:comment_date_gmt>
+    <wp:comment_content>jessica, what a moving tribute to Linda - and Dave. And what incredibly sad story. Thank you for sharing your thoughts and feelings on what must be a difficult day for you. Life just isn't fair, but clearly those two were exceptional human beings.</wp:comment_content>
+    <wp:comment_approved>1</wp:comment_approved>
+    <wp:comment_type/>
+    <wp:comment_parent>0</wp:comment_parent>
+    <wp:comment_user_id>0</wp:comment_user_id>
+  </wp:comment>
+<category domain="post_tag" nicename="friends-and-family">Friends &amp; Family</category><category domain="post_tag" nicename="death-and-dying">Death &amp; Dying</category></item></channel>
+</rss>
