@@ -296,6 +296,12 @@ def transform_item(item: ET.Element, mapping: dict[str, str], slug_overrides: di
     # content_el.text = content_html
     set_cdata(content_el, content_html)
 
+    # Force dc:creator to "seed"
+    dc_el = item.find(f"dc:creator", namespaces=NS)
+    if dc_el is None:
+        dc_el = ET.SubElement(item, f"{{{NS['dc']}}}creator")
+    dc_el.text = "seed"
+
 def main():
     ap = argparse.ArgumentParser(description="Transform WordPress WXR for Substack import.")
     ap.add_argument("wxr_in")
@@ -344,6 +350,15 @@ def main():
     channel = root.find("channel")
     if channel is None:
         raise RuntimeError("No <channel> found.")
+
+    # Replace channel <wp:author> with a seed author block
+    for a in list(channel.findall("wp:author", namespaces=NS)):
+        channel.remove(a)
+    seed_author = ET.SubElement(channel, f"{{{NS['wp']}}}author")
+    ET.SubElement(seed_author, f"{{{NS['wp']}}}author_id").text = "1"
+    ET.SubElement(seed_author, f"{{{NS['wp']}}}author_login").text = "seed"
+    ET.SubElement(seed_author, f"{{{NS['wp']}}}author_email").text = "seed@example.com"
+    ET.SubElement(seed_author, f"{{{NS['wp']}}}author_display_name").text = "Seed"
 
     orig_items = channel.findall("item")
     # Remove all items; we’ll append selected/transformed ones
