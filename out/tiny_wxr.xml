@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:wp="http://wordpress.org/export/1.2/">
+
+  <channel>
+    <title>Minimal Seed</title>
+    <link>https://example.com/import/minimal-seed</link>
+    <description>one-post sanity check</description>
+    <wp:wxr_version>1.2</wp:wxr_version>
+
+    <!-- simple author so dc:creator resolves -->
+    <wp:author>
+      <wp:author_id>1</wp:author_id>
+      <wp:author_login>seed</wp:author_login>
+      <wp:author_email>seed@example.com</wp:author_email>
+      <wp:author_display_name>Seed</wp:author_display_name>
+    </wp:author>
+
+    <item>
+      <title>(test) minimal post</title>
+      <link>https://example.com/import/minimal-seed-001</link>
+      <pubDate>Sat, 20 Sep 2025 12:00:01 +0000</pubDate>
+      <dc:creator>seed</dc:creator>
+      <guid isPermaLink="false">import:minimal-001</guid>
+
+      <content:encoded><![CDATA[
+        <p>Hello from a minimal WXR post.</p>
+        <p>If you can see this, the importer is functioning.</p>
+      ]]></content:encoded>
+
+      <wp:post_date>2025-09-20 12:00:01</wp:post_date>
+      <wp:post_date_gmt>2025-09-20 12:00:01</wp:post_date_gmt>
+      <wp:status>publish</wp:status>
+      <wp:post_type>post</wp:post_type>
+      <wp:comment_status>closed</wp:comment_status>
+      <wp:ping_status>closed</wp:ping_status>
+      <wp:post_name>minimal-seed-001</wp:post_name>
+    </item>
+  </channel>
+</rss>
