@@ -69,9 +69,9 @@
   <wp:post_type>post</wp:post_type>
   <wp:post_password/>
   <wp:is_sticky>0</wp:is_sticky>
-  <category domain="category" nicename="fuller-family"><![CDATA[Fuller Family]]></category>
-  <category domain="category" nicename="me"><![CDATA[Me]]></category>
-  <category domain="category" nicename="writing"><![CDATA[Writing]]></category>
+  <category domain="post_tag" nicename="fuller-family"><![CDATA[Fuller Family]]></category>
+  <category domain="post_tag" nicename="me"><![CDATA[Me]]></category>
+  <category domain="post_tag" nicename="writing"><![CDATA[Writing]]></category>
   <wp:postmeta>
     <wp:meta_key>_publicize_pending</wp:meta_key>
     <wp:meta_value><![CDATA[1]]></wp:meta_value>
@@ -81,7 +81,7 @@
     <wp:meta_value><![CDATA[08/06/2016 01:52:25 PM]]></wp:meta_value>
   </wp:postmeta>
   <wp:postmeta>
-    <wp:meta_key>_elasticsearch_data_sharing_indexed_on</wp:meta_key>
+    <wp:meta_key>_elasticsearch_data_sharing_indexed_on</wp:mecategoryta_key>
     <wp:meta_value><![CDATA[2025-09-14 09:12:37]]></wp:meta_value>
   </wp:postmeta>
 </item>
@@ -109,7 +109,7 @@
   <wp:post_type>post</wp:post_type>
   <wp:post_password/>
   <wp:is_sticky>0</wp:is_sticky>
-  <category domain="category" nicename="politics"><![CDATA[Politics]]></category>
+  <category domain="post_tag" nicename="politics"><![CDATA[Politics]]></category>
   <wp:postmeta>
     <wp:meta_key>_publicize_pending</wp:meta_key>
     <wp:meta_value><![CDATA[1]]></wp:meta_value>
@@ -180,9 +180,9 @@
   <wp:post_type>post</wp:post_type>
   <wp:post_password/>
   <wp:is_sticky>0</wp:is_sticky>
-  <category domain="category" nicename="fuller-family"><![CDATA[Fuller Family]]></category>
-  <category domain="category" nicename="women"><![CDATA[Women]]></category>
-  <category domain="category" nicename="writing"><![CDATA[Writing]]></category>
+  <category domain="post_tag" nicename="fuller-family"><![CDATA[Fuller Family]]></category>
+  <category domain="post_tag" nicename="women"><![CDATA[Women]]></category>
+  <category domain="post_tag" nicename="writing"><![CDATA[Writing]]></category>
   <wp:postmeta>
     <wp:meta_key>_publicize_pending</wp:meta_key>
     <wp:meta_value><![CDATA[1]]></wp:meta_value>
