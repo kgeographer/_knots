@@ -30,11 +30,11 @@
 <wp:base_blog_url>https://kgnomad.wordpress.com</wp:base_blog_url>
 <wp:author>
   <wp:author_id>271263585</wp:author_id>
-  <wp:author_login>kgnomad</wp:author_login>
+  <wp:author_login>Karl G</wp:author_login>
   <wp:author_email>karl.geog@gmail.com</wp:author_email>
-  <wp:author_display_name>kgnomad</wp:author_display_name>
-  <wp:author_first_name></wp:author_first_name>
-  <wp:author_last_name></wp:author_last_name>
+  <wp:author_display_name>Karl G</wp:author_display_name>
+  <wp:author_first_name>Karl</wp:author_first_name>
+  <wp:author_last_name>Grossner</wp:author_last_name>
 </wp:author>
 <generator>http://wordpress.com/</generator>
 
