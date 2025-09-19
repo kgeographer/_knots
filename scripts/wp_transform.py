@@ -4,7 +4,7 @@
 usage:
 # Example: randomly pick 25 from the 83 posts that have both tags and comments
 python scripts/wp_transform.py dump/wordpress_posts/knotty.wordpress.2025-09-14.000.xml \
-  work/category_mappings.tsv out/substack_import_sample.xml \
+  work/category_mappings.tsv out/substack_import_sample_{n}.xml \
   --filter both --limit 25 --sample-random --sample-seed 42
 
 run with seed to repeatable random sampling
