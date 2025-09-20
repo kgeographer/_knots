@@ -4,8 +4,8 @@
 usage:
 # Example: randomly pick 25 from the 83 posts that have both tags and comments
 python scripts/wp_transform.py dump/wordpress_posts/knotty.wordpress.2025-09-14.000.xml \
-  work/category_mappings.tsv out/substack_import_sample_5.xml \
-  --filter both --limit 5 --sample-random --sample-seed 11 \
+  work/category_mappings.tsv out/substack_import_sample_50.xml \
+  --filter both --limit 50 --sample-random --sample-seed 13 \
   --slug-override work/substack_tag_slugs.tsv
 
 run with seed to repeatable random sampling
@@ -368,6 +368,11 @@ def main():
     # Build selection list respecting --filter
     selected = []
     for it in orig_items:
+        # Skip non-posts and non-published items
+        ptype = (it.findtext("wp:post_type", default="", namespaces=NS) or "").strip()
+        pstat = (it.findtext("wp:status", default="", namespaces=NS) or "").strip()
+        if ptype != "post" or pstat != "publish":
+            continue
         # inspect without mutation
         tags = extract_final_tags(it, mapping, slug_overrides)
         comments = extract_eligible_comments(it)
